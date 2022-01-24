@@ -14,8 +14,7 @@ Steps for the Deployment:
 7. Once succesful, ensure that docker image is created by executing "docker images" in the command prompt.
 8. Run the Genre Prediction job by running following command in the command prompt:
 docker run -it --rm -v <Path of your local system of folder Music_Genre_Classification>\app\input_data:/app/input_data -v <Path of your local system of folder Music_Genre_Classification>\app\output_data:/app/output_data -v <Path of your local system of folder Music_Genre_Classification>\app:/app -p 8000:8000 python_imgdbs
-  
-  Replace "<Path of your local system of folder Music_Genre_Classification>" with the path of your system where this directory is present after downloading.
+Replace "<Path of your local system of folder Music_Genre_Classification>" with the path of your system where this directory is present after downloading.
 9. If it shows the message "Uvicorn running on http://127.0.0.1:8000", then it is successful.
 10. It would first generate the result in the output_data folder.
 11. App could be accessed by going on "http://127.0.0.1:8000/".
