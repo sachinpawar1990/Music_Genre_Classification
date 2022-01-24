@@ -20,4 +20,4 @@ Steps for the Deployment:
 12. There are 3 API requests which could be made:
   i. upload_classified_results - Accessed by http://127.0.0.1:8000/upload_classified_results. This puts the results into the SQLite database, so it should be executed first.
   ii. get_all_genres - Accessed by http://127.0.0.1:8000/get_all_genres. It gets all the genres present in the database along with the titles of the genres.
-  iii. get_title_from_genre - Accessed by http://127.0.0.1:8000/get_title_from_genre?genre=genre_name. It gives the all the titles present in the database when provided with certain genre name. Here, genre name should be provided. So, for genre "folk", link would be http://127.0.0.1:8000/get_title_from_genre?genre=folk
+  iii. get_title_from_genre - Accessed by http://127.0.0.1:8000/get_title_from_genre?genre=genre_name. It gives all the titles present in the database when provided with certain genre name. Here, genre name should be provided. So, for genre "folk", link would be http://127.0.0.1:8000/get_title_from_genre?genre=folk
